@@ -1,0 +1,24 @@
+{
+  "environment": {
+    "astrbot_version": "4.28.2",
+    "installation": "isolated editable local plugin installation",
+    "chat_model": "gpt-4.1-mini through the generic OpenAI-compatible source",
+    "marketplace_installation": "not tested; AstrBot Cloud listing pending"
+  },
+  "chat_tool": "google_search",
+  "primary_case": {
+    "query": "site:astrbot.app plugin development",
+    "number": 3,
+    "tool_calls": 1,
+    "status": "succeeded",
+    "result_count": 3,
+    "result_titles": [
+      "AstrBot Plugin Development Guide 🌠",
+      "AstrBot Star",
+      "Publishing Plugins to the Plugin Marketplace"
+    ],
+    "trace_id_returned": false
+  },
+  "billing_limit": "The tool response contained no trace ID. Matching use by application, API and time is only correlation, not an exact per-record proof.",
+  "scope_limit": "Only the primary web-search operation was run through AstrBot chat; other Google SERP resource types are not included in this plugin version."
+}
