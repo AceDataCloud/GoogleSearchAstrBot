@@ -2,7 +2,7 @@
 
 通过自己的 Ace Data Cloud 账号在 AstrBot 聊天中执行 Google 网页搜索。Agent 工具 `google_search` 同步返回标题、链接和摘要，无需 task ID 或轮询。
 
-[English guide](../README.md) · [Google Search API](https://platform.acedata.cloud/documents) · [当前价格](https://platform.acedata.cloud/models)
+[English guide](../README.md) · [Google Search API](https://platform.acedata.cloud/documents?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=googlesearchastrbot_readme_documents) · [当前价格](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=googlesearchastrbot_readme_pricing)
 
 ## 1. 搜索并安装
 
@@ -12,7 +12,9 @@ AstrBot Cloud 尚未正式上架。源码合并发布后，可通过 **Installed
 
 ## 2. 获取 Google Search API Key
 
-登录 [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications)，打开 **General application** 复制 Key，或在 **Manage Keys → Create** 创建 AstrBot 专用 Key。服务专用 Key 必须允许 `/serp/google`。搜索前检查当前价格和余额。
+首次使用请先注册并登录；如果应用页还没有通用应用，点击 **初始化通用应用（Initialize General Application）**，再按下面步骤管理密钥。
+
+登录 [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=googlesearchastrbot_readme_api_key)，打开 **General application** 复制 Key，或在 **Manage Keys → Create** 创建 AstrBot 专用 Key。服务专用 Key 必须允许 `/serp/google`。搜索前检查当前价格和余额。
 
 只复制 Key 本身，不加 `Bearer `，也不要使用 `platform-...` 管理 Token。不要把 Key 写入聊天消息或仓库。
 
