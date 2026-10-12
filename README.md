@@ -2,7 +2,7 @@
 
 Search Google from an AstrBot conversation using your own Ace Data Cloud account. The `google_search` Agent tool returns structured web titles, links, and snippets synchronously, so there is no task ID or polling step.
 
-[简体中文指南](readme/README_zh_Hans.md) · [Google Search API](https://platform.acedata.cloud/documents) · [Current prices](https://platform.acedata.cloud/models)
+[简体中文指南](readme/README_zh_Hans.md) · [Google Search API](https://platform.acedata.cloud/documents?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=googlesearchastrbot_readme_documents) · [Current prices](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=googlesearchastrbot_readme_pricing)
 
 ## 1. Find and install
 
@@ -12,7 +12,9 @@ The AstrBot Cloud listing has not yet been published. After the source release i
 
 ## 2. Get a key with Google Search access
 
-Sign in to [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications). Open **General application** to copy a key, or choose **Manage Keys → Create** for a dedicated AstrBot key. A service-specific key must allow `/serp/google`. Check current pricing and balance before a search.
+New account? Register and sign in first. If the Applications page has no General application yet, choose **Initialize General Application**, then continue with the key steps below.
+
+Sign in to [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=googlesearchastrbot_readme_api_key). Open **General application** to copy a key, or choose **Manage Keys → Create** for a dedicated AstrBot key. A service-specific key must allow `/serp/google`. Check current pricing and balance before a search.
 
 Copy the key value only. Do not add `Bearer ` or use a `platform-...` management token. Never place a key in a chat prompt or repository file.
 
