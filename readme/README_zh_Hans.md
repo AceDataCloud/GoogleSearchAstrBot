@@ -8,7 +8,7 @@
 
 在 AstrBot WebUI 打开 **Extensions → Plugins → AstrBot Plugin Market**，搜索 **Google Search**。核对卡片 **Google Search by Ace Data Cloud**、作者 **acedatacloud** 和当前 Google Search 服务图标，然后点击 **Install**。到 **Installed** 确认插件已启用且没有加载错误。
 
-AstrBot Cloud 尚未正式上架。源码合并发布后，可通过 **Installed → Install (+) → Install from URL** 填入 `https://github.com/AceDataCloud/GoogleSearchAstrBot` 预览。URL 安装不能算官方市场发现或安装通过。
+插件已在 [AstrBot Cloud](https://cloud.astrbot.app/plugin/AceDataCloud/astrbot_plugin_google_search_acedatacloud) 正式上架，推荐按上面的市场流程安装。也可通过 **Installed → Install (+) → Install from URL** 填入 `https://github.com/AceDataCloud/GoogleSearchAstrBot` 安装源码仓库；仓库安装是独立路径，不能代替市场安装验证。
 
 ## 2. 获取 Google Search API Key
 
@@ -47,7 +47,11 @@ AstrBot Cloud 尚未正式上架。源码合并发布后，可通过 **Installed
 
 ## 已验证的本地运行
 
-隔离的 AstrBot `v4.28.2` 实例成功加载插件；ChatUI 对示例查询实际调用 `google_search` 一次，返回三条相关 AstrBot 插件文档结果。[脱敏证据](../tests/e2e-results.json)记录输入与结果标题。官方市场上架和安装仍未验证。
+隔离的 AstrBot `v4.28.2` 实例成功加载插件；ChatUI 对示例查询实际调用 `google_search` 一次，返回三条相关 AstrBot 插件文档结果。[脱敏证据](../tests/e2e-results.json)记录输入与结果标题。
+
+## 已验证的市场安装
+
+2026-10-12，[Cloud 公开卡片](https://cloud.astrbot.app/plugin/AceDataCloud/astrbot_plugin_google_search_acedatacloud)显示版本 `0.1.0`。独立的全新 AstrBot `v4.28.2` 实例通过官方市场安装，读回 `install_method: market` 与 `activated: true`。ChatUI 仅调用一次 `google_search`，返回三条搜索结果。响应没有 trace ID，因此不声称精确匹配某一条账单。[脱敏市场证据](https://github.com/AceDataCloud/Index/blob/main/plans/ecosystem-growth/agent-provider-onboarding/execution/evidence/astrbot-market-20261012.json)记录安装与调用。
 
 ## 品牌素材
 

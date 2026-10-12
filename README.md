@@ -8,7 +8,7 @@ Search Google from an AstrBot conversation using your own Ace Data Cloud account
 
 In AstrBot WebUI, open **Extensions → Plugins → AstrBot Plugin Market** and search **Google Search**. Check for **Google Search by Ace Data Cloud**, author **acedatacloud**, and the Google Search service icon, then select **Install**. Under **Installed**, verify that the plugin is enabled without a load error.
 
-The AstrBot Cloud listing has not yet been published. After the source release is merged, use **Installed → Install (+) → Install from URL** with `https://github.com/AceDataCloud/GoogleSearchAstrBot` for a preview. A URL installation does not establish official market discovery or installation.
+The plugin is published in [AstrBot Cloud](https://cloud.astrbot.app/plugin/AceDataCloud/astrbot_plugin_google_search_acedatacloud). Prefer the market installation above. **Installed → Install (+) → Install from URL** with `https://github.com/AceDataCloud/GoogleSearchAstrBot` is also available; a repository installation is a separate path and does not validate market installation.
 
 ## 2. Get a key with Google Search access
 
@@ -47,7 +47,11 @@ The plugin sends the key only to `https://api.acedata.cloud`, rejects redirects,
 
 ## Verified local run
 
-On an isolated AstrBot `v4.28.2` instance, the plugin loaded and ChatUI invoked `google_search` once with the example query. It returned three relevant AstrBot plugin documentation results. [Sanitized evidence](tests/e2e-results.json) records the input and result titles. The public market listing and install remain unverified.
+On an isolated AstrBot `v4.28.2` instance, the plugin loaded and ChatUI invoked `google_search` once with the example query. It returned three relevant AstrBot plugin documentation results. [Sanitized evidence](tests/e2e-results.json) records the input and result titles.
+
+## Verified market installation
+
+On 2026-10-12, the public [Cloud listing](https://cloud.astrbot.app/plugin/AceDataCloud/astrbot_plugin_google_search_acedatacloud) reported version `0.1.0`. A separate clean AstrBot `v4.28.2` instance installed the package through the official market and read back `install_method: market` and `activated: true`. ChatUI called `google_search` once and returned three organic results. The response contained no trace ID, so an exact billing-row match is not claimed. [Sanitized market evidence](https://github.com/AceDataCloud/Index/blob/main/plans/ecosystem-growth/agent-provider-onboarding/execution/evidence/astrbot-market-20261012.json) records the installation and call.
 
 ## Brand asset
 
