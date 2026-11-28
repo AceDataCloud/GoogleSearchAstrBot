@@ -16,15 +16,13 @@ Repository installation: **Plugins → Plugins → Installed → Install Plugin 
 
 ## 2. Get a key with Google Search access
 
-New account? Register and sign in first. If the Applications page has no General application yet, choose **Initialize General Application**, then continue with the key steps below.
-
 Sign in to [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=astrbot&utm_medium=referral&utm_campaign=evergreen). Open **General application** to copy a key, or choose **Manage Keys → Create** for a dedicated AstrBot key. A service-specific key must allow `/serp/google`. Check current pricing and balance before a search.
 
 Copy the key value only. Do not add `Bearer ` or use a `platform-...` management token. Never place a key in a chat prompt or repository file.
 
 ### Token screenshots: copy or create a dedicated key
 
-[Register or sign in to Ace](https://platform.acedata.cloud/console/applications?utm_source=astrbot&utm_medium=referral&utm_campaign=evergreen), then open **Applications → General application** and initialize it if absent. Use **1** to copy the selected key, or **2 Manage Keys → Create** for a dedicated key. If Allowed APIs is enabled, include `/serp/google`; check current entitlement, balance and prices before use.
+[Register or sign in to Ace](https://platform.acedata.cloud/console/applications?utm_source=astrbot&utm_medium=referral&utm_campaign=evergreen), then open **Applications → General application**. Use **1** to copy the selected key, or **2 Manage Keys → Create** for a dedicated key. If Allowed APIs is enabled, include `/serp/google`; check current entitlement, balance and prices before use.
 
 ![Copy an Ace key or open Manage Keys (redacted)](_assets/tutorial/get-api-key-en.png)
 
