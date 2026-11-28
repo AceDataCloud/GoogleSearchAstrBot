@@ -4,11 +4,11 @@ Search Google from an AstrBot conversation using your own Ace Data Cloud account
 
 This independent **Google Search integration is provided by Ace Data Cloud**; it is not an official plugin from the Google Search publisher or the AstrBot team. Use your own Ace API key.
 
-[简体中文指南](readme/README_zh_Hans.md) · [Google Search API](https://platform.acedata.cloud/documents?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=googlesearchastrbot_readme_documents) · [Current prices](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=googlesearchastrbot_readme_pricing)
+[简体中文指南](readme/README_zh_Hans.md) · [Google Search API](https://platform.acedata.cloud/documents?utm_source=astrbot&utm_medium=referral&utm_campaign=evergreen) · [Current prices](https://platform.acedata.cloud/models?utm_source=astrbot&utm_medium=referral&utm_campaign=evergreen)
 
 ## 1. Find and install
 
-Current upstream navigation is **Plugins → Plugins → Plugin Market / Installed**; older English versions may label the section Extensions. Search **Google Search** and verify **Google Search by Ace Data Cloud**, author **acedatacloud**, and the matching service icon.
+Current upstream navigation is **Plugins → Plugins → Plugin Market / Installed**; older English versions may label the section Extensions. Search **Google Search** and verify **Google Search**, author **acedatacloud**, and the matching service icon.
 
 An [official Cloud listing](https://cloud.astrbot.app/plugin/AceDataCloud/astrbot_plugin_google_search_acedatacloud) exists at market version `0.1.0`. Select **Install**, then check that it is enabled without a load error under **Installed**. This PR’s `0.1.1` is a documentation/image update and is not yet a Cloud release; merging source does not update the market package.
 
@@ -18,13 +18,13 @@ Repository installation: **Plugins → Plugins → Installed → Install Plugin 
 
 New account? Register and sign in first. If the Applications page has no General application yet, choose **Initialize General Application**, then continue with the key steps below.
 
-Sign in to [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=googlesearchastrbot_readme_api_key). Open **General application** to copy a key, or choose **Manage Keys → Create** for a dedicated AstrBot key. A service-specific key must allow `/serp/google`. Check current pricing and balance before a search.
+Sign in to [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=astrbot&utm_medium=referral&utm_campaign=evergreen). Open **General application** to copy a key, or choose **Manage Keys → Create** for a dedicated AstrBot key. A service-specific key must allow `/serp/google`. Check current pricing and balance before a search.
 
 Copy the key value only. Do not add `Bearer ` or use a `platform-...` management token. Never place a key in a chat prompt or repository file.
 
 ### Token screenshots: copy or create a dedicated key
 
-[Register or sign in to Ace](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=googlesearchastrbot_readme_signup), then open **Applications → General application** and initialize it if absent. Use **1** to copy the selected key, or **2 Manage Keys → Create** for a dedicated key. If Allowed APIs is enabled, include `/serp/google`; check current entitlement, balance and prices before use.
+[Register or sign in to Ace](https://platform.acedata.cloud/console/applications?utm_source=astrbot&utm_medium=referral&utm_campaign=evergreen), then open **Applications → General application** and initialize it if absent. Use **1** to copy the selected key, or **2 Manage Keys → Create** for a dedicated key. If Allowed APIs is enabled, include `/serp/google`; check current entitlement, balance and prices before use.
 
 ![Copy an Ace key or open Manage Keys (redacted)](_assets/tutorial/get-api-key-en.png)
 
@@ -36,11 +36,11 @@ Images were reused and checked on **2026-10-19**; original capture dates are unk
 
 ### Where to paste it in AstrBot
 
-Open **Plugins → Plugins → Installed**, select the gear (**Plugin Configuration**) on **Google Search by Ace Data Cloud**, paste the key into **Ace Data Cloud API key with Google Search access** (stored field `api_key`), and save. Paste the key only, with no `Bearer ` prefix; never put it in model-provider settings or a chat prompt. UI masking does not encrypt the data-directory config. These are exact text steps; no fabricated settings image is used.
+Open **Plugins → Plugins → Installed**, select the gear (**Plugin Configuration**) on **Google Search**, paste the key into **Ace Data Cloud API key with Google Search access** (stored field `api_key`), and save. Paste the key only, with no `Bearer ` prefix; never put it in model-provider settings or a chat prompt. UI masking does not encrypt the data-directory config. These are exact text steps; no fabricated settings image is used.
 
 ## 3. Configure AstrBot
 
-Under **Plugins → Plugins → Installed**, select the gear icon on **Google Search by Ace Data Cloud**. Enter the key in **Ace Data Cloud API key with Google Search access** and save. The UI masks the field, while the AstrBot data directory stores its original value; protect that directory.
+Under **Plugins → Plugins → Installed**, select the gear icon on **Google Search**. Enter the key in **Ace Data Cloud API key with Google Search access** and save. The UI masks the field, while the AstrBot data directory stores its original value; protect that directory.
 
 Use a chat model that supports tool calling and enable `google_search` for the active profile and persona. Check **Plugins → Manage Behaviors → Function Tools** if the tool is unavailable.
 
