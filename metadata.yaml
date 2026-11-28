@@ -1,8 +1,8 @@
 name: astrbot_plugin_google_search_acedatacloud
-display_name: Google Search by Ace Data Cloud
+display_name: Google Search
 short_desc: Search the web from AstrBot chat with structured Google results.
 desc: Use your Ace Data Cloud key to search Google and return titles, links, and snippets.
-version: 0.1.1
+version: 0.1.2
 author: acedatacloud
 repo: https://github.com/AceDataCloud/GoogleSearchAstrBot
 astrbot_version: ">=4.28.2,<5"
